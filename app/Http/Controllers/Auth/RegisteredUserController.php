@@ -46,10 +46,12 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
+        $request->session()->regenerate();
+
         if ($user->role === 'librarian') {
-            return redirect('/librarian/dashboard');
+            return redirect()->route('librarian.dashboard');
         }
 
-        return redirect('/scholar/dashboard');
+        return redirect()->route('scholar.dashboard');
     }
 }
