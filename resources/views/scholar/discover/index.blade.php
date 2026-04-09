@@ -4,22 +4,18 @@
 
 @section('content')
 <div x-data="scholarDiscover()" class="max-w-[1600px] mx-auto w-full flex flex-col xl:flex-row gap-8 xl:gap-10">
-
-    <!-- ========================================== -->
-    <!-- LEFT COLUMN (Main Content) -->
-    <!-- ========================================== -->
     <div class="flex-1 flex flex-col min-w-0">
 
         <!-- Top Banner -->
         <div
-            class="w-full h-[240px] md:h-[280px] rounded-[12px] border border-black relative overflow-hidden bg-black flex flex-col justify-end p-8 shadow-sm mb-10">
+            class="w-full h-[240px] md:h-[280px] rounded-[10px] border border-black relative overflow-hidden bg-black flex flex-col justify-end p-8 shadow-sm mb-10">
             <!-- Background Artwork -->
-            <img src="{{ asset('images/banner-abstract-bg.webp') }}"
+            <img src="{{ asset('images/bgsearch.jpg') }}"
                 class="absolute inset-0 w-full h-full object-cover opacity-80" alt="Abstract Background">
 
             <!-- Books Stack Overlay (Right Side) -->
-            <div class="absolute right-0 top-0 h-full w-[50%] hidden md:block">
-                <img src="{{ asset('images/banner-books-overlay.webp') }}" class="w-full h-full object-cover object-left"
+            <div class="absolute right-0 top-0 h-full w-[30%] hidden md:block">
+                <img src="{{ asset('images/bookshow.png') }}" class="w-full h-full object-cover object-left"
                     alt="Books Showcase">
             </div>
 
@@ -33,7 +29,6 @@
                 </div>
             </div>
 
-            <!-- Search Bar Overlapping Bottom -->
             <div class="relative z-10 w-full max-w-[650px]">
                 <div
                     class="bg-white rounded-[6px] flex items-center px-4 py-3.5 border border-transparent focus-within:border-gray-400 focus-within:ring-4 focus-within:ring-white/20 transition-all shadow-lg">
@@ -55,10 +50,8 @@
             </div>
         </div>
 
-        <!-- Catalogue Header -->
         <h3 class="text-[14px] font-bold text-black tracking-widest uppercase mb-4">Book Catalogue</h3>
 
-        <!-- Filters Section -->
         <div class="flex flex-wrap items-center gap-3 mb-8">
             <button
                 class="flex items-center gap-2 px-3 py-1.5 border border-gray-300 rounded-[6px] text-[13px] text-gray-700 hover:bg-gray-50 transition-colors">
@@ -150,25 +143,25 @@
 
         <!-- Widget: Total Borrowing -->
         <div
-            class="w-full h-[120px] rounded-[12px] border border-black bg-[#DDF4F8] relative overflow-hidden flex flex-col justify-center p-6 shadow-sm">
+            class="w-full h-[90px] rounded-[5px] border-2 border-[#c9c9c9] bg-[#DDF4F8] relative overflow-hidden flex flex-col justify-center p-6">
             <!-- Books Graphic bg -->
             <div class="absolute right-[-20px] top-0 h-full w-[170px] opacity-90">
-                <img src="{{ asset('images/books-graphic-widget.webp') }}" class="w-full h-full object-cover object-right"
+                <img src="{{ asset('images/booksborrowed.png') }}" class="w-full h-full object-cover object-right"
                     alt="Books">
             </div>
             <div class="relative z-10">
-                <h3 class="text-[11px] font-bold text-gray-600 tracking-widest uppercase mb-1">Total Borrowing</h3>
+                <h3 class="font-sans text-[12px] font-bold text-gray-600 tracking-widest uppercase mb-1">Total Borrowing</h3>
                 <div class="flex items-baseline gap-1.5">
                     <span
-                        class="font-serif text-[42px] font-bold text-black leading-none">{{ $activeBorrowingCount }}</span>
+                        class="font-sans text-[30px] font-bold text-black leading-none">{{ $activeBorrowingCount }}</span>
                     <span class="font-sans text-[15px] font-medium text-gray-600">/ 3 books</span>
                 </div>
             </div>
         </div>
 
         <!-- Widget: Trending Archive -->
-        <div class="w-full rounded-[12px] border border-black bg-white p-6 shadow-sm">
-            <h3 class="text-[13px] font-bold text-black tracking-widest uppercase mb-5">Trending Archive</h3>
+        <div class="w-full rounded-[5px] border-2 border-[#c9c9c9] bg-white p-6 shadow-sm">
+            <h3 class="font-serif text-[15px] font-bold text-black tracking-widest uppercase mb-5">Trending Archive</h3>
 
             <div class="flex flex-col gap-0">
                 @forelse($trendingBooks as $index => $book)
@@ -197,7 +190,7 @@
             </div>
         </div>
 
-        <div class="w-full rounded-[10px] border-2 border-black bg-white p-6">
+        <div class="w-full rounded-[5px] border-2 border-[#c9c9c9] bg-white p-6">
             <h3 class="text-[13px] font-bold text-black tracking-widest uppercase mb-5">Recently Added</h3>
 
             <div class="flex flex-col gap-3">

@@ -406,12 +406,10 @@
                     </p>
                 </div>
                 @endforeach
-
-                <!-- View All Button -->
-                <button
+                <a href="{{ route('scholar.reading-log.index') }}"
                     class="w-full bg-black text-white text-[13px] font-medium py-3 rounded-[4px] hover:bg-gray-800 transition-colors shadow-md">
                     View All
-                </button>
+                </a>
             </div>
         </div>
 

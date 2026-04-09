@@ -212,6 +212,11 @@
                                             class="bg-[#FCA5A5] text-[#991B1B] px-3 py-1 rounded-[4px] font-bold text-[16px]">
                                             OVERDUE
                                         </span>
+                                    @elseif ($borrowing->status === 'canceled')
+                                        <span
+                                            class="bg-[#FCA5A5] text-[#991B1B] px-3 py-1 rounded-[4px] font-bold text-[16px]">
+                                            CANCELED
+                                        </span>
                                     @endif
                                 </td>
 

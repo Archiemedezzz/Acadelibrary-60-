@@ -118,13 +118,10 @@
         @endif
     </div>
 
-    <!-- ========================================== -->
-    <!-- RIGHT COLUMN (Widgets) -->
-    <!-- ========================================== -->
     <div class="w-full xl:w-[360px] flex flex-col gap-8 shrink-0">
 
         <div
-            class="w-full h-[90px] rounded-[5px] border border-black bg-[#DDF4F8] relative overflow-hidden flex flex-col justify-center p-6 shadow-sm">
+            class="w-full h-[90px] rounded-[5px] border-2 border-[#c9c9c9] bg-[#DDF4F8] relative overflow-hidden flex flex-col justify-center p-6">
             <div class="absolute right-[-20px] top-0 h-full w-[170px] opacity-100">
                 <img src="{{ asset('images/booksborrowed.png') }}"
                     class="w-full h-full object-cover object-right" alt="Books">
@@ -133,13 +130,13 @@
                 <h3 class="text-[11px] font-bold text-gray-600 tracking-widest uppercase mb-1">Total Borrowing</h3>
                 <div class="flex items-baseline gap-1.5">
                     <span
-                        class="font-sans text-[30px] font-bold text-black leading-none">{{ $activeBorrowingCount }}</span>
+                        class="font-sans text-[30px] font-medium text-black leading-none">{{ $activeBorrowingCount }}</span>
                     <span class="font-sans text-[15px] font-medium text-gray-600">/ 3 books</span>
                 </div>
             </div>
         </div>
 
-        <div class="w-full rounded-[5px] border border-black bg-white p-6 shadow-sm">
+        <div class="w-full rounded-[5px] border-2 border-[#c9c9c9] bg-white p-6">
             <h3 class="font-serif text-[15px] font-bold text-black tracking-widest uppercase mb-5">Trending Archive</h3>
 
             <div class="flex flex-col gap-0">
@@ -169,7 +166,7 @@
             </div>
         </div>
 
-        <div class="w-full rounded-[5px] border border-black bg-white p-6 shadow-sm">
+        <div class="w-full rounded-[5px] border-2 border-[#c9c9c9] bg-white p-6">
             <h3 class="font-serif text-[15px] font-bold text-black tracking-widest uppercase mb-5">Recently Added</h3>
 
             <div class="flex flex-col gap-3">
