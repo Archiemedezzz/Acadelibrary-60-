@@ -386,7 +386,7 @@
         </div>
 
         <!-- Widget: RECENT ACTIVITY -->
-        <div class="w-full rounded-[6px] border border-gray-300 bg-white p-5 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
+        <div class="w-full rounded-[10px] border-2 border-gray-300 bg-white p-5">
             <h3 class="font-serif text-[18px] font-bold text-black tracking-[0.1em] uppercase mb-5">Recent Activity
             </h3>
 

@@ -197,8 +197,7 @@
             </div>
         </div>
 
-        <!-- Widget: Recently Added -->
-        <div class="w-full rounded-[12px] border border-black bg-white p-6 shadow-sm">
+        <div class="w-full rounded-[10px] border-2 border-black bg-white p-6">
             <h3 class="text-[13px] font-bold text-black tracking-widest uppercase mb-5">Recently Added</h3>
 
             <div class="flex flex-col gap-3">

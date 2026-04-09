@@ -15,7 +15,7 @@
             @if (count($pendingRequests))
             @foreach ($pendingRequests as $request)
             <div
-                class="border border-gray-300 rounded-[6px] p-3 flex flex-col justify-between bg-white shadow-sm">
+                class="border-2 border-gray-300 rounded-[6px] p-3 flex flex-col justify-between bg-white">
                 <div class="flex gap-3">
                     <img src="{{ $request->book->cover_image ? asset('storage/' . $request->book->cover_image) : asset('images/books/default.jpg') }}"
                         alt="{{ $request->book->title }}"
@@ -325,7 +325,7 @@
 
     <div class="w-full xl:w-[380px] flex flex-col gap-6 shrink-0">
 
-        <div class="w-full rounded-[6px] border border-gray-300 bg-white p-5 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
+        <div class="w-full rounded-[6px] border-2 border-gray-300 bg-white p-5">
             <h3 class="font-serif text-[18px] font-bold text-black tracking-[0.1em] uppercase mb-4">Monthly Statistic
             </h3>
 
